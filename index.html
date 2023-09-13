@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <nav>
+        <div class="nav-brand">
+            <h2>Justin.dev</h2>
+        </div>
+        <div class="mobile-nav-toggle">
+            <i class="fa-solid fa-bars burger-button" aria-expanded="false"></i>
+            <i class="fa-solid fa-xmark x-button" aria-expanded="false"></i>
+        </div>
+        <ul class="nav-menu" data-visible="false">
+            <li class="nav-item">
+                <a href="#" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="#about" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+                <a href="#projects" class="nav-link">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a href="#contact" class="nav-link">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="container home-container" id="home">
+            <div class="hero-left">
+                <img src="./images/q3.jpg" alt="">
+                
+            </div>
+            <div class="hero-right">
+                <h1>Full Stack Web Developer</h1>
+                <p>Hi! I'm <strong>Justin Adorable</strong>, a passionate React developer based in 📍 Manila, Philippines</p>
+                <div class="hero-icons">
+                    <a href="https://github.com/justingca" target="_blank"><i class="fa-brands fa-github"></i></a>
+
+                    <!-- <i class="fa-brands fa-linkedin"></i> -->
+
+                    <!-- <a href="https://twitter.com/JiggehFly"><i class="fa-brands fa-twitter"></i></a> -->
+                </div>
+            </div>
+        </div>
+
+        <div class="container scroll-container">      
+            <a href="#about" class="scroll-down">Scroll Down <i class="fas fa-arrow-down"></i></a>
+        </div>
+
+        <div class="container section-header" id="about">
+            <h1 class="section-title-01">About Me</h1>
+            <h2 class="section-title-02">About Me</h2>
+        </div>
+
+        <div class="container about-container">
+            <div class="about-left">
+                <h3>About Me</h3>
+
+                <p>As a Full Stack Developer, I possess an impressive arsenal of skills in HTML, CSS and JavaScript, specializing in the MERN tech stack (MongoDB, Express, React and NodeJS). I also have experience with styling elements with Bootstrap, but mostly rely on Pure CSS. I excel in designing and maintaining responsive websites that offer a smooth user experience. I enjoy crafting dynamic, engaging interfaces through writing clean and optimized code. I am also a team player who thrives in collaborating with cross-functional teams to produce outstanding web applications.</p>
+
+                <button class="btn-resume"> 
+                    Download Resume <i class="fa-solid fa-download"></i>
+                </button>
+                
+                <div class="tech-list">
+                    <div class="tech-1">
+                        <h5>Tech Stack:</h5>
+                        <img src="images/html_logo.png" alt="" class="tech-list-pic" title="html">
+                        <img src="images/css_logo.png" alt="" class="tech-list-pic" title="css">
+                        <img src="images/javascript_logo.png" alt="" class="tech-list-pic" title="javascript">
+                    </div>
+                    <div class="tech-2">
+                        <img src="images/mongo_logo.png" alt="" class="tech-list-pic" title="mongoDB">
+                        <img src="images/express_logo.png" alt="" class="tech-list-pic" title="express">
+                        <img src="images/react2_logo.png" alt="" class="tech-list-pic" title="react">
+                        <img src="images/node_logo.png" alt="" class="tech-list-pic" title="nodeJS">
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-right">
+                <img src="./images/coffee.jpeg" alt="">
+            </div>
+        </div>
+
+        <div class="container section-header" id="projects">
+            <h1 class="section-title-01">Portfolio</h1>
+            <h2 class="section-title-02">Portfolio</h2>
+        </div>
+
+        <div class="container projects-container">
+            <div class="project-1">
+                <div class="project-left">
+                    <img src="./images/definitelead.png" alt="">
+                </div>
+                <div class="project-right">
+                    <h1>DefiniteLEAD.com</h1>
+                    <p>A customer web portal built for definiteLEAD, a training and consultancy company. Clients will be able to book appointments as well as see scheduled events by the company. This website was built with WordPress, AgileCRM with styling elements integrated with elementor.</p>
+                    <div class="project-btn-container">
+                        <a href="http://definitelead.com" target="_blank"><div class="project-btn">
+                            Live Site <i class="fa-solid fa-share-from-square"></i>
+                        </div></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-2">
+                <div class="project-left">
+                    <h1>Twitter X Clone</h1>
+                    <p>Full stack web application built with <strong>MongoDB, Express, React and NodeJS</strong>. Post new Tweets, follow users, like and comment on posts and message fellow users on this twitter clone. Image Upload integrated with Amazon S3 bucket. User Authentication built with JSON web token (JWT). <strong>Client and Server deployed and hosted for free on render, so live demo might be spun down due to inactivity.</strong></p>
+                    <div class="project-btn-container">
+                        <a href="https://twitter-x-clone-app.onrender.com/" target="_blank"><div class="project-btn">
+                            Live Site <i class="fa-solid fa-share-from-square"></i>
+                        </div></a>
+                        <a href="https://github.com/justingca/twtitter-mern-frontend"><div class="project-btn">
+                            Github <i class="fa-brands fa-github"></i>
+                        </div></a>
+                    </div>
+                </div>
+                <div class="project-right">
+                    <img src="./images/twitterclone.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="container section-header" id="contact">
+            <h1 class="section-title-01">Contact Me</h1>
+            <h2 class="section-title-02">Contact Me</h2>
+        </div>
+
+        <div class="container">
+            <div class="contact-info">
+                <h4>Contact Information</h4>
+                <h2>
+                    Always open to discussing new web development projects.
+                </h2>
+
+                <div class="contact-deets">
+                    <div class="phone">
+                        <h3>
+                            <i class="fa-solid fa-phone"></i> Phone
+                        </h3>
+                        <span>+639175434528</span>
+                    </div>
+                    <div class="email">
+                        <h3>
+                            <i class="fa-solid fa-envelope"></i> Email
+                        </h3>
+                        <span>justingca.dev@gmail.com</span>
+                    </div>
+                    <div class="location">
+                        <h3>
+                            <i class="fa-solid fa-location-dot"></i> Location
+                        </h3>
+                        <span>Manila, Philippines</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    
+    <footer>
+        <div class="container">
+            
+        </div>
+    </footer>
+</body>
+</html>
